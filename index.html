@@ -1,89 +1,144 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Connexion au Serveur Minecraft</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-</head>
-<body class="bg-gray-900 text-white font-sans">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Connexion au Serveur Minecraft</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  </head>
+  <body class="bg-gray-900 text-white font-sans">
+    <!-- Header -->
+    <header class="bg-gray-800 py-6 text-center">
+      <h1 class="text-4xl font-bold text-green-400">Bienvenue sur le Serveur Minecraft !</h1>
+      <p class="mt-2 text-gray-300">Suivez les étapes ci-dessous pour vous connecter.</p>
+    </header>
 
-  <!-- Header -->
-  <header class="bg-gray-800 py-6 text-center">
-    <h1 class="text-4xl font-bold text-green-400">Bienvenue sur le Serveur Cartel Ouaga !</h1>
-    <p class="mt-2 text-gray-300">Suivez les étapes ci-dessous pour vous connecter.</p>
-  </header>
-
-  <!-- Main Content -->
-  <main class="container mx-auto px-4 py-8">
-    <!-- Section 1: Adresse du Serveur -->
-    <section class="mb-8">
-      <h2 class="text-2xl font-semibold text-green-400 mb-4">1. Adresse du Serveur</h2>
-      <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
-        <p class="text-gray-300">Pour vous connecter, vous aurez besoin de l'adresse IP du serveur :</p>
-        <div class="mt-4 p-4 bg-gray-700 rounded">
-          <code class="text-green-400 text-lg">192.168.x.x</code> <span class="text-gray-400">(ou l'adresse IP publique)</span>
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-8">
+      <!-- Section 1: Adresse du Serveur -->
+      <section class="mb-8">
+        <h2 class="text-2xl font-semibold text-green-400 mb-4">1. Adresse du Serveur</h2>
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+          <p class="text-gray-300">Pour vous connecter, vous aurez besoin de l'adresse IP du serveur :</p>
+          <div class="mt-4 p-4 bg-gray-700 rounded">
+            <code class="text-green-400 text-lg"> # Je vous la donne </code>
+          </div>
+          <p class="mt-4 text-gray-300">Port : <code class="text-green-400">668</code></p>
         </div>
-        <p class="mt-4 text-gray-300">Port : <code class="text-green-400">19132</code></p>
-      </div>
-    </section>
+      </section>
 
-    <!-- Section 2: Étapes de Connexion -->
-    <section class="mb-8">
-      <h2 class="text-2xl font-semibold text-green-400 mb-4">2. Étapes de Connexion</h2>
-      <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
-        <div class="space-y-4">
-          <!-- Étape 1 -->
-          <div>
-            <h3 class="text-xl font-medium text-green-400">Étape 1 : Ouvrir Minecraft</h3>
-            <p class="text-gray-300">Lancez Minecraft Bedrock sur votre appareil (PC, mobile, console).</p>
+      <!-- Section 2: Configurer le DNS sur les Consoles -->
+      <section class="mb-8">
+        <h2 class="text-2xl font-semibold text-green-400 mb-4">2. Configurer le DNS sur les Consoles</h2>
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+          <p class="text-gray-300">
+            Sur les consoles (PlayStation, Xbox, Nintendo Switch), vous devez configurer un DNS personnalisé pour
+            accéder au serveur.
+          </p>
+
+          <!-- PlayStation -->
+          <div class="mt-6">
+            <h3 class="text-xl font-medium text-green-400">PlayStation (PS4/PS5)</h3>
+            <ol class="list-decimal list-inside mt-2 text-gray-300">
+              <li>
+                Allez dans <strong>Paramètres</strong> > <strong>Réseau</strong> >
+                <strong>Configurer la connexion Internet</strong>.
+              </li>
+              <li>Sélectionnez votre connexion Wi-Fi ou filaire.</li>
+              <li>Choisissez <strong>Personnaliser</strong> pour les paramètres réseau.</li>
+              <li>Lorsque vous arrivez à l'étape <strong>DNS</strong>, sélectionnez <strong>Manuel</strong>.</li>
+              <li>
+                Entrez l'adresse DNS suivante :
+                <ul class="list-disc list-inside ml-6">
+                  <li><strong>DNS Primaire</strong> : <code class="text-green-400">104.238.130.180</code></li>
+                  <li>
+                    <strong>DNS Secondaire</strong> : <code class="text-green-400">1.1.1.1</code> (ou laissez vide).
+                  </li>
+                </ul>
+              </li>
+              <li>Terminez la configuration et testez la connexion.</li>
+            </ol>
           </div>
-          <!-- Étape 2 -->
-          <div>
-            <h3 class="text-xl font-medium text-green-400">Étape 2 : Ajouter le Serveur</h3>
-            <p class="text-gray-300">
-              Allez dans l'onglet <strong>"Serveurs"</strong>, puis cliquez sur <strong>"Ajouter un serveur"</strong>.
-            </p>
+
+          <!-- Xbox -->
+          <div class="mt-6">
+            <h3 class="text-xl font-medium text-green-400">Xbox (One/Series X|S)</h3>
+            <ol class="list-decimal list-inside mt-2 text-gray-300">
+              <li>
+                Allez dans <strong>Paramètres</strong> > <strong>Réseau</strong> > <strong>Paramètres réseau</strong>.
+              </li>
+              <li>Sélectionnez <strong>Paramètres avancés</strong> > <strong>DNS</strong>.</li>
+              <li>Choisissez <strong>Manuel</strong>.</li>
+              <li>
+                Entrez l'adresse DNS suivante :
+                <ul class="list-disc list-inside ml-6">
+                  <li><strong>DNS Primaire</strong> : <code class="text-green-400">104.238.130.180</code></li>
+                  <li>
+                    <strong>DNS Secondaire</strong> : <code class="text-green-400">1.1.1.1</code> (ou laissez vide).
+                  </li>
+                </ul>
+              </li>
+              <li>Enregistrez les modifications et testez la connexion.</li>
+            </ol>
           </div>
-          <!-- Étape 3 -->
-          <div>
-            <h3 class="text-xl font-medium text-green-400">Étape 3 : Remplir les Informations</h3>
-            <p class="text-gray-300">
-              Entrez les informations suivantes :
-            </p>
-            <ul class="list-disc list-inside mt-2 text-gray-300">
-              <li><strong>Nom du serveur</strong> : Carte Ouaga.</li>
-              <li><strong>Adresse du serveur</strong> : Je vous la donne en PV.</li>
-              <li><strong>Port</strong> : <code class="text-green-400">19132</code>.</li>
-            </ul>
-          </div>
-          <!-- Étape 4 -->
-          <div>
-            <h3 class="text-xl font-medium text-green-400">Étape 4 : Rejoindre le Serveur</h3>
-            <p class="text-gray-300">Sauvegardez les informations et cliquez sur <strong>"Rejoindre le serveur"</strong>.</p>
+
+          <!-- Nintendo Switch -->
+          <div class="mt-6">
+            <h3 class="text-xl font-medium text-green-400">Nintendo Switch</h3>
+            <ol class="list-decimal list-inside mt-2 text-gray-300">
+              <li>
+                Allez dans <strong>Paramètres</strong> > <strong>Internet</strong> >
+                <strong>Paramètres Internet</strong>.
+              </li>
+              <li>Sélectionnez votre connexion Wi-Fi.</li>
+              <li>Choisissez <strong>Modifier les paramètres</strong>.</li>
+              <li>Allez dans <strong>DNS</strong> et passez en mode <strong>Manuel</strong>.</li>
+              <li>
+                Entrez l'adresse DNS suivante :
+                <ul class="list-disc list-inside ml-6">
+                  <li><strong>DNS Primaire</strong> : <code class="text-green-400">104.238.130.180</code></li>
+                  <li>
+                    <strong>DNS Secondaire</strong> : <code class="text-green-400">1.1.1.1</code> (ou laissez vide).
+                  </li>
+                </ul>
+              </li>
+              <li>Enregistrez les modifications et testez la connexion.</li>
+            </ol>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Section 3: Problèmes de Connexion -->
-    <section>
-      <h2 class="text-2xl font-semibold text-green-400 mb-4">3. Problèmes de Connexion ?</h2>
-      <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
-        <p class="text-gray-300">Si vous ne parvenez pas à vous connecter :</p>
-        <ul class="list-disc list-inside mt-2 text-gray-300">
-          <li>Vérifiez que l'adresse IP et le port sont corrects.</li>
-          <li>Assurez-vous que le serveur est en ligne.</li>
-          <li>Contactez le goat RT.</li>
-        </ul>
-      </div>
-    </section>
-  </main>
+      <!-- Section 3: Rejoindre le Serveur -->
+      <section class="mb-8">
+        <h2 class="text-2xl font-semibold text-green-400 mb-4">3. Rejoindre le Serveur</h2>
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+          <p class="text-gray-300">Une fois le DNS configuré, suivez ces étapes pour rejoindre le serveur :</p>
+          <ol class="list-decimal list-inside mt-2 text-gray-300">
+            <li>Lancez Minecraft Bedrock sur votre console.</li>
+            <li>Allez dans l'onglet <strong>"Servers"</strong> (Serveurs).</li>
+            <li>Sélectionnez <strong>"BedrockConnect"</strong> pour voir votre serveur dans la liste.</li>
+            <li>Rejoignez le serveur en cliquant sur <strong>"Rejoindre le serveur"</strong>.</li>
+          </ol>
+        </div>
+      </section>
 
-  <!-- Footer -->
-  <footer class="bg-gray-800 py-4 text-center mt-8">
-    <p class="text-gray-300">Amusez-vous bien sur le serveur ! 🎮</p>
-  </footer>
+      <!-- Section 4: Problèmes de Connexion -->
+      <section>
+        <h2 class="text-2xl font-semibold text-green-400 mb-4">4. Problèmes de Connexion ?</h2>
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+          <p class="text-gray-300">Si vous ne parvenez pas à vous connecter :</p>
+          <ul class="list-disc list-inside mt-2 text-gray-300">
+            <li>Vérifiez que l'adresse IP et le port sont corrects.</li>
+            <li>Assurez-vous que le serveur est en ligne.</li>
+            <li>Contactez RT pour plus d'aide.</li>
+          </ul>
+        </div>
+      </section>
+    </main>
 
-</body>
+    <!-- Footer -->
+    <footer class="bg-gray-800 py-4 text-center mt-8">
+      <p class="text-gray-300">Amusez-vous bien sur le serveur ! 🎮</p>
+    </footer>
+  </body>
 </html>
